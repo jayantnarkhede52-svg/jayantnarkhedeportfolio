@@ -4401,12 +4401,83 @@ body {
   .seo-dashboard {
     padding: 1rem !important;
   }
+
+  /* Atmosphere Controls — reposition to horizontal bottom bar */
+  .atmosphere-controls {
+    position: fixed !important;
+    right: auto !important;
+    left: 50% !important;
+    top: auto !important;
+    bottom: 5rem !important;
+    transform: translateX(-50%) !important;
+    flex-direction: row !important;
+    gap: 0.4rem !important;
+    padding: 0.5rem 0.8rem !important;
+    border-radius: 50px !important;
+    z-index: 999 !important;
+  }
+
+  .weather-btn {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .weather-icon {
+    font-size: 1.1rem !important;
+  }
+
+  .weather-label {
+    display: none !important;
+  }
+
+  /* Contact Cards — fix min-width overflow */
+  .contact-card {
+    min-width: auto !important;
+    padding: 1.5rem !important;
+  }
+
+  .contact-details {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.3rem !important;
+  }
+
+  .contact-link {
+    word-break: break-all !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Hero buttons — full width & no overflow */
+  .hero-actions a,
+  .hero-actions button,
+  .hero-actions .btn-primary {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-size: 0.85rem !important;
+  }
 }
 
 /* ==============================
    RESPONSIVE — SMALL MOBILE (≤480px)
    ============================== */
 @media (max-width: 480px) {
+
+  /* Atmosphere Controls — even smaller */
+  .atmosphere-controls {
+    bottom: 4.5rem !important;
+    gap: 0.2rem !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+
+  .weather-btn {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .weather-icon {
+    font-size: 0.9rem !important;
+  }
 
   .hero-title {
     font-size: clamp(1.5rem, 9vw, 2.5rem) !important;
