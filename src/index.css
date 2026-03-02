@@ -1011,6 +1011,13 @@ body {
   transition: var(--transition);
 }
 
+@media (max-width: 768px) {
+  .navbar-container {
+    top: 0.75rem;
+  }
+}
+
+
 .navbar-inner {
   pointer-events: auto;
   width: 90%;
@@ -4185,12 +4192,13 @@ body {
 
   /* Hero */
   .hero-container {
-    padding-top: 12vh;
+    padding-top: 15vh !important;
     padding-bottom: 40px;
     min-height: 80vh;
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
+
 
   .hero-content {
     max-width: 100% !important;
@@ -5004,8 +5012,9 @@ body {
   }
 
   .hero-container {
-    padding-top: 10vh !important;
+    padding-top: 15vh !important;
   }
+
 }
 
 /* ==============================
