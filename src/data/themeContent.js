@@ -68,6 +68,36 @@ export const themeContent = {
                     strategy: "Capturing the golden hour of heritage. Preserving the glow.",
                     execution: "Infusing modern structure with the warmth of ancestral craftsmanship.",
                     outcome: "A legacy that endures through every change of the atmosphere."
+                },
+                {
+                    id: "salary-peaceful",
+                    name: "Salary Predictor",
+                    category: "Quiet Insight / ML",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "The uncertainty of future paths leading to restless thoughts.",
+                    strategy: "Observing patterns in the data to find a calm direction.",
+                    execution: "A gentle machine learning model that whispers possibilities.",
+                    outcome: "Clarity in compensation, bringing peace to career planning."
+                },
+                {
+                    id: "growth-pilot-peaceful",
+                    name: "Growth Pilot",
+                    category: "Digital Garden / AI",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "A digital presence that feels hidden and untended.",
+                    strategy: "Using mindful intelligence to nurture search visibility.",
+                    execution: "An AI companion that simplifies the path to organic growth.",
+                    outcome: "A flourishing search presence, blooming with natural traffic."
+                },
+                {
+                    id: "zinco-peaceful",
+                    name: "Zinco Roofing",
+                    category: "Natural Shelter / React",
+                    url: "https://zincoroof.com",
+                    problem: "Homes exposed to the elements without a durable sanctuary.",
+                    strategy: "Crafting resilient protection that harmonizes with the environment.",
+                    execution: "A performance-led React interface for high-quality roofing services.",
+                    outcome: "Secure, lasting peace for Navi Mumbai residents."
                 }
             ],
             footer: "Designed with intent. Delivered with peace."
@@ -184,6 +214,36 @@ export const themeContent = {
                     strategy: "Balancing heritage aesthetics with modern performance standards.",
                     execution: "Custom jewelry-optimized build with high-resolution visual performance.",
                     outcome: "Successful digital transition with maintained brand trust."
+                },
+                {
+                    id: "salary-minimal",
+                    name: "Salary Predictor",
+                    category: "DATA / ML",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "Lack of transparent, data-driven compensation benchmarks.",
+                    strategy: "Regression-based modeling on validated industry datasets.",
+                    execution: "Streamlined ML pipeline with high predictive accuracy.",
+                    outcome: "Precise market-value insights for career decision-making."
+                },
+                {
+                    id: "growth-pilot-minimal",
+                    name: "Growth Pilot AI",
+                    category: "SEO / AUTOMATION",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "Time-intensive manual SEO audits and fragmented analysis.",
+                    strategy: "Automated crawl logic and GPT-driven insight generation.",
+                    execution: "Search-engineered audit tool with sub-second analysis speed.",
+                    outcome: "Immediate identification of technical debt and growth opportunities."
+                },
+                {
+                    id: "zinco-minimal",
+                    name: "Zinco Roofing",
+                    category: "DEV / CONSTRUCTION",
+                    url: "https://zincoroof.com",
+                    problem: "Fragmented service discovery for industrial and residential roofing.",
+                    strategy: "Conversion-optimized React architecture with localized SEO.",
+                    execution: "Clean, performant service portal built on modern standards.",
+                    outcome: "Direct, measurable lead generation for Navi Mumbai operations."
                 }
             ],
             footer: "Build with intent. Optimize for clarity."
@@ -258,6 +318,36 @@ export const themeContent = {
                     strategy: "Synthesizing heritage with high-performance UI.",
                     execution: "Advanced visual pipeline with localized authority mapping.",
                     outcome: "Legacy preservation through futuristic digital integration."
+                },
+                {
+                    id: "salary-ai",
+                    name: "Neural Salary Engine",
+                    category: "PREDICTIVE / 06",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "Unoptimized compensation mapping in fluid markets.",
+                    strategy: "Neural regression on validated data streams.",
+                    execution: "High-precision ML pipeline with autonomous feedback loops.",
+                    outcome: "Decrypted wage signals and optimized workforce liquidity."
+                },
+                {
+                    id: "growth-pilot-ai",
+                    name: "Growth Pilot AI",
+                    category: "AUTONOMOUS SEO / 07",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "Human-speed SEO auditing is obsolete in the neural age.",
+                    strategy: "Autonomous crawl logic and LLM-driven strategy synthesis.",
+                    execution: "Zero-latency audit engine with real-time semantic mapping.",
+                    outcome: "Total search dominance through machine-speed optimization."
+                },
+                {
+                    id: "zinco-ai",
+                    name: "Zinco Shell Protocol",
+                    category: "STRUCTURAL / 08",
+                    url: "https://zincoroof.com",
+                    problem: "Sub-optimal shelter mapping in urban environments.",
+                    strategy: "Indexing structural metadata for durable asset protection.",
+                    execution: "Advanced React-driven service layer for high-density environments.",
+                    outcome: "Optimized structural resilience mapping."
                 }
             ],
             footer: "Link established. Secure connection."
@@ -384,6 +474,39 @@ export const themeContent = {
                     strategy: "Heritage-first storytelling combined with high-conversion visual UI.",
                     execution: "Custom jewelry-optimized build with localized SEO authority.",
                     results: "Successfully transitioned legacy trust into digital leads and brand modernism."
+                },
+                {
+                    id: "salary-startup",
+                    name: "Salary Predictor",
+                    category: "FinTech / Scale",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "Opaque market value data leading to inefficient talent acquisition.",
+                    market: "The $400B global recruiting and workforce management sector.",
+                    strategy: "Aggressive data ingestion and predictive ML modeling.",
+                    execution: "Scalable ML microservice deployed for sub-second predictive output.",
+                    results: "Eliminated salary guessing games with 98% accuracy metrics."
+                },
+                {
+                    id: "growth-pilot-startup",
+                    name: "Growth Pilot AI",
+                    category: "SaaS / Growth",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "Manual SEO overhead killing the velocity of early-stage startups.",
+                    market: "A hyper-competitive SaaS landscape where organic traffic is survival.",
+                    strategy: "Automated technical auditing and AI-driven growth roadmaps.",
+                    execution: "Built a high-velocity SEO analysis engine for rapid search iteration.",
+                    results: "Reduced SEO audit time by 90% and doubled technical health scores."
+                },
+                {
+                    id: "zinco-startup",
+                    name: "Zinco Roofing Solution",
+                    category: "PropTech / Scale",
+                    url: "https://zincoroof.com",
+                    problem: "Legacy friction in the construction and roofing service sector.",
+                    market: "The rapidly expanding urban infrastructure of Navi Mumbai.",
+                    strategy: "Aggressive localized SEO and ROI-centric service funnels.",
+                    execution: "Built a high-performance React engine for industrial-scale lead flow.",
+                    results: "Dominant market position in Navi Mumbai roofing services."
                 }
             ],
             footer: "Results are engineered. Scalability is built-in."
@@ -476,6 +599,36 @@ export const themeContent = {
                     strategy: "Heritage preservation through high-performance visual storytelling.",
                     execution: "Bespoke jewelry-optimized UI with localized authority SEO.",
                     outcome: "Successful digital transition with significant increase in lead quality."
+                },
+                {
+                    id: "salary-corp",
+                    name: "Corporate Salary Predictor",
+                    category: "FINTECH / ANALYTICS",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "Fragmented compensation data impacting institutional planning.",
+                    strategy: "Validated regression modeling on institutional-grade datasets.",
+                    execution: "Secure, high-performance ML stack for predictive benchmarking.",
+                    outcome: "Enhanced strategic planning through data-driven wage forecasting."
+                },
+                {
+                    id: "growth-pilot-corp",
+                    name: "Growth Pilot AI",
+                    category: "SYSTEMS / SEO",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "Enterprise-scale SEO complexity exceeding manual capacity.",
+                    strategy: "Automated large-scale crawl logic and GPT-driven strategy synthesis.",
+                    execution: "Hardened infrastructure for deep technical SEO auditing at scale.",
+                    outcome: "Streamlined search engineering and absolute technical health."
+                },
+                {
+                    id: "zinco-corp",
+                    name: "Zinco Industrial Roofing",
+                    category: "INFRASTRUCTURE / SYSTEMS",
+                    url: "https://zincoroof.com",
+                    problem: "Inconsistent technical visibility for high-value roofing projects.",
+                    strategy: "Institutional-grade asset mapping and localized authority building.",
+                    execution: "Secure, high-availability React architecture for enterprise trust.",
+                    outcome: "Sustained operational growth in industrial-scale roofing."
                 }
             ],
             footer: "Engineering trust, one system at a time."
@@ -564,6 +717,36 @@ export const themeContent = {
                     strategy: "Combining serif elegance with electric blue impact.",
                     execution: "High-res asset pipeline with dramatic lighting effects.",
                     outcome: "A 50-year legend, reborn for the digital age."
+                },
+                {
+                    id: "salary-creative",
+                    name: "Salary Prism",
+                    category: "EDITORIAL / ML",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "How to visualize the invisible value of talent?",
+                    strategy: "Using data as a creative medium. Predictive geometry.",
+                    execution: "Custom prediction modules with kinetic data visualizations.",
+                    outcome: "Projecting the future of compensation with bold precision."
+                },
+                {
+                    id: "growth-pilot-creative",
+                    name: "Growth Pilot Canvas",
+                    category: "SEARCH / ART",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "SEO audits are often sterile and overly clinical.",
+                    strategy: "Infusing technical audits with editorial flow and visual grit.",
+                    execution: "A high-performance AI engine that paints a path to search dominance.",
+                    outcome: "Mastering the search landscape with architectural flair."
+                },
+                {
+                    id: "zinco-creative",
+                    name: "Zinco Shell",
+                    category: "ARCHITECTURAL / REACT",
+                    url: "https://zincoroof.com",
+                    problem: "Industrial roofing needs a visual identity that matches its durability.",
+                    strategy: "Large renders and asymmetrical grids to show technical scale.",
+                    execution: "Custom React modules with high-contrast service sections.",
+                    outcome: "Industrial safety meets high-end digital grit."
                 }
             ],
             footer: "The work speaks. The code performs."
@@ -616,6 +799,36 @@ export const themeContent = {
                     strategy: "Real-time state synchronization via Railway nodes.",
                     execution: "Optimized DB indexing for millisecond response times.",
                     outcome: "Zero collisions. Resource utilization maxed."
+                },
+                {
+                    id: "salary-hacker",
+                    name: "Salary Decryptor",
+                    category: "DATA / EXPLOIT",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "Opaque wage structures hiding market value.",
+                    strategy: "Brute-forcing data patterns via ML subroutines.",
+                    execution: "Predictive kernel for real-time wage decoding.",
+                    outcome: "Compensation transparency unlocked."
+                },
+                {
+                    id: "growth-pilot-hacker",
+                    name: "Growth Pilot",
+                    category: "SEO / RECON",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "Manual site auditing is slow and detectable.",
+                    strategy: "Automated crawl-bot with AI-based payload analysis.",
+                    execution: "Stealth SEO audit engine for rapid search reconnaissance.",
+                    outcome: "Technical vulnerabilities mapped. Search priority established."
+                },
+                {
+                    id: "zinco-hacker",
+                    name: "Zinco Shell",
+                    category: "INFRA / SHIELD",
+                    url: "https://zincoroof.com",
+                    problem: "Physical perimeters lacking digital visibility.",
+                    strategy: "Hardening the search presence via localized authority mapping.",
+                    execution: "React-driven infrastructure for industrial service deployment.",
+                    outcome: "Structural dominance confirmed."
                 }
             ]
         }
@@ -696,6 +909,36 @@ export const themeContent = {
                     strategy: "Subtle visual storytelling and elite brand preservation.",
                     execution: "Jewelry-optimized performance layer with understated luxury UI.",
                     outcome: "The successful modernization of a legacy without compromise."
+                },
+                {
+                    id: "salary-lux",
+                    name: "Salary Virtuoso",
+                    category: "ANALYTICS / ELITE",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "Lack of refined market insights for executive-level compensation.",
+                    strategy: "Bespoke regression modeling on curated high-value datasets.",
+                    execution: "Engineered for precision and aesthetic technical clarity.",
+                    outcome: "Defining the standard for predictive professional value."
+                },
+                {
+                    id: "growth-pilot-lux",
+                    name: "Growth Pilot AI",
+                    category: "STRATEGY / SEO",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "Conventional SEO tools lack the depth for elite brand scaling.",
+                    strategy: "Advanced AI-driven analysis of structural search integrity.",
+                    execution: "A sophisticated audit suite for discerning digital architects.",
+                    outcome: "Achieving search dominance with understated technical mastery."
+                },
+                {
+                    id: "zinco-lux",
+                    name: "Zinco Architectural",
+                    category: "INDUSTRIAL / ELITE",
+                    url: "https://zincoroof.com",
+                    problem: "High-end roofing solutions lost in a sea of generic service providers.",
+                    strategy: "Bespoke digital storytelling and narrative-led user journeys.",
+                    execution: "Engineered for excellence with refined React architecture.",
+                    outcome: "The standard for elite industrial protection in Navi Mumbai."
                 }
             ],
             footer: "Designed for those who understand the value of subtlety."
@@ -775,6 +1018,36 @@ export const themeContent = {
                     strategy: "Sparkly visuals and a fresh, young-at-heart vibe.",
                     execution: "High-performance catalog with major 'wow' factor.",
                     outcome: "A 50-year old legend just became the coolest new shop."
+                },
+                {
+                    id: "salary-playful",
+                    name: "Salary Guess-No-More",
+                    category: "DATA / FUN",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "Salary talk is awkward and confusing.",
+                    strategy: "A super-smart robot that knows exactly what you're worth.",
+                    execution: "Bouncy ML model that turns data into clear answers.",
+                    outcome: "No more guessing games—just happy paychecks!"
+                },
+                {
+                    id: "growth-pilot-playful",
+                    name: "Growth Pilot",
+                    category: "SEO / BOOST",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "Being invisible on Google is no fun at all.",
+                    strategy: "Magic AI powers to help your site win at hide-and-seek.",
+                    execution: "Snappy audit tool that finds all the secret growth spots.",
+                    outcome: "First-page vibes and a whole lot of new friends!"
+                },
+                {
+                    id: "zinco-playful",
+                    name: "Zinco Roofs",
+                    category: "SHIELD / FUN",
+                    url: "https://zincoroof.com",
+                    problem: "Nobody likes a leaky roof, but talking about it is boring.",
+                    strategy: "Bright visuals and a super-friendly service flow.",
+                    execution: "Snappy React components and happy interaction design.",
+                    outcome: "Happy homes and dry ceilings for everyone!"
                 }
             ],
             footer: "More coming soon. Keep it colorful!"
@@ -871,6 +1144,36 @@ export const themeContent = {
                     strategy: "Capturing the golden hour of heritage. Preserving the glow.",
                     execution: "Infusing modern structure with the warmth of ancestral craftsmanship.",
                     outcome: "A legacy that endures through every change of the atmosphere."
+                },
+                {
+                    id: "salary-atm",
+                    name: "Salary Predictor",
+                    category: "Clear Sky / Data",
+                    url: "https://salary-predictor-chi.vercel.app/",
+                    problem: "A landscape obscured by compensation uncertainty.",
+                    strategy: "Wait for the data points to align. Reveal the value.",
+                    execution: "Predictive modeling that clears the fog around market worth.",
+                    outcome: "A focused path through the professional elements."
+                },
+                {
+                    id: "growth-pilot-atm",
+                    name: "Growth Pilot AI",
+                    category: "Mist / Growth",
+                    url: "https://seo-analyzer-ai1.vercel.app/",
+                    problem: "A search presence lost in the grey of manual auditing.",
+                    strategy: "Harness the algorithmic pressure. Create clarity within the index.",
+                    execution: "Forging a path to visibility that withstands search engine storms.",
+                    outcome: "A beacon of authority through the shifting digital tides."
+                },
+                {
+                    id: "zinco-atm",
+                    name: "Zinco Roofing",
+                    category: "Clear Sky / Shelter",
+                    url: "https://zincoroof.com",
+                    problem: "Homes vulnerable to the shifting elements.",
+                    strategy: "Creating a resilient horizon that withstands the storm.",
+                    execution: "Forging a visual identity that acts as a beacon of safety.",
+                    outcome: "Atmospheric protection for the modern home."
                 }
             ],
             footer: "Each project is a storm survived and a sky cleared."
@@ -927,6 +1230,36 @@ export const themeContent = {
                 strategy: "Balancing heritage aesthetics with modern performance standards.",
                 execution: "Custom jewelry-optimized build with high-resolution visual performance.",
                 outcome: "Successful digital transition with maintained brand trust."
+            },
+            {
+                id: "salary-shared",
+                name: "Salary Predictor",
+                category: "ML / ANALYTICS",
+                url: "https://salary-predictor-chi.vercel.app/",
+                problem: "Navigating career growth without accurate compensation benchmarks.",
+                strategy: "Developed a predictive model based on validated industry data.",
+                execution: "Implemented a regression-based ML engine with an intuitive interface.",
+                outcome: "Provided users with precise, data-backed salary projections."
+            },
+            {
+                id: "growth-pilot-shared",
+                name: "Growth Pilot AI",
+                category: "SEO / AI AUDIT",
+                url: "https://seo-analyzer-ai1.vercel.app/",
+                problem: "Manual technical SEO auditing is slow and prone to oversight.",
+                strategy: "Automated the audit process using LLM-derived insights and crawl logic.",
+                execution: "Built a high-performance analysis tool for immediate technical evaluation.",
+                outcome: "Significant reduction in audit time and improved search health visibility."
+            },
+            {
+                id: "zinco-shared",
+                name: "Zinco Roofing Solution",
+                category: "REACT / SERVICE",
+                url: "https://zincoroof.com",
+                problem: "Navi Mumbai based roofing firm needing a modern, performant digital presence.",
+                strategy: "Localized SEO and conversion-focused service architecture.",
+                execution: "Built using React with a focus on speed and lead generation.",
+                outcome: "Successful launch with dominant local search visibility."
             }
         ],
         whyChooseMe: [
