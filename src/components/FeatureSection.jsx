@@ -18,6 +18,7 @@ const FeatureSection = () => {
     const whyChooseMe = themeContent.common.whyChooseMe;
     const atmosphereNarratives = themeContent.atmosphere?.weatherNarratives;
 
+    const isHacker = currentTheme === 'hacker';
     const isCorporate = currentTheme === 'corporate';
     const isCreative = currentTheme === 'creative';
     const isAtmosphere = currentTheme === 'atmosphere';
@@ -37,14 +38,14 @@ const FeatureSection = () => {
         );
     }
 
-    const services = themeContent[currentTheme]?.services || themeContent.common.whyChooseMe;
+    const services = isHacker ? (themeContent.hacker?.services || themeContent.common.whyChooseMe) : themeContent.common.whyChooseMe;
 
     return (
         <section id="features" className={`features-section ${isCorporate ? 'corporate-services' : ''} ${isCreative ? 'creative-services' : ''}`}>
             <div className="container" style={isCreative ? { marginLeft: 0 } : {}}>
                 <div className="section-header">
                     <h2 className="section-title">
-                        {isCorporate ? (themeContent.corporate.servicesTitle || "Strategic Solutions") : isCreative ? "CAPABILITIES" : (themeContent[currentTheme]?.performance?.title || "Why Choose Me")}
+                        {isHacker ? "Subroutines" : "Strategic Solutions & Capabilities"}
                     </h2>
                 </div>
                 <div className="why-choose-grid">

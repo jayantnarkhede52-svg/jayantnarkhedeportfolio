@@ -145,7 +145,7 @@ const Hero = () => {
                             <div className="startup-hero-actions">
                                 <div className="hero-actions">
                                     <a
-                                        href={`https://wa.me/91885693465?text=${encodeURIComponent("Hi Jayant, I've seen the traction. Let's discuss a growth strategy.")}`}
+                                        href={`https://wa.me/918885693465?text=${encodeURIComponent("Hi Jayant, I've seen the traction. Let's discuss a growth strategy.")}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn-primary"
@@ -161,7 +161,7 @@ const Hero = () => {
                         ) : (currentTheme === 'ai') ? (
                             <div className="hero-actions">
                                 <a
-                                    href={`https://wa.me/91885693465?text=${encodeURIComponent("Hi Jayant, System Initialized. Let's collaborate.")}`}
+                                    href={`https://wa.me/918885693465?text=${encodeURIComponent("Hi Jayant, System Initialized. Let's collaborate.")}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-primary"
@@ -184,7 +184,7 @@ const Hero = () => {
                         ) : (currentTheme === 'luxury') ? (
                             <div className="hero-actions">
                                 <a
-                                    href={`https://wa.me/91885693465?text=${encodeURIComponent("Hi Jayant, I'd like to get started with your services.")}`}
+                                    href={`https://wa.me/918885693465?text=${encodeURIComponent("Hi Jayant, I'd like to get started with your services.")}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-primary"
@@ -198,7 +198,7 @@ const Hero = () => {
                         ) : (
                             <div className="hero-actions">
                                 <a
-                                    href={`https://wa.me/91885693465?text=${encodeURIComponent("Hi Jayant, I'd like to get started with your services.")}`}
+                                    href={`https://wa.me/918885693465?text=${encodeURIComponent("Hi Jayant, I'd like to get started with your services.")}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-primary"
@@ -207,7 +207,7 @@ const Hero = () => {
                                 </a>
 
                                 {content.ctaSecondary && (
-                                    <a href="tel:+91885693465" className="btn-glass glass">
+                                    <a href="tel:+918885693465" className="btn-glass glass">
                                         {content.ctaSecondary}
                                     </a>
                                 )}

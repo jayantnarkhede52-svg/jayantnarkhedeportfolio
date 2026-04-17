@@ -14,66 +14,43 @@ import * as THREE from "three";
 // ---------------- ATOM STRUCTURE ----------------
 
 function AtomStructure() {
-
     const group = useRef();
     const nucleus = useRef();
-
     const electron1 = useRef();
     const electron2 = useRef();
     const electron3 = useRef();
 
-
     useFrame((state) => {
-
         const t = state.clock.getElapsedTime();
 
-        /* Cursor Interaction */
+        // Cursor Interaction
+        group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, state.mouse.x * 0.4, 0.05);
+        group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, -state.mouse.y * 0.4, 0.05);
 
-        group.current.rotation.y =
-            THREE.MathUtils.lerp(
-                group.current.rotation.y,
-                state.mouse.x * 0.4,
-                0.05
-            );
-
-        group.current.rotation.x =
-            THREE.MathUtils.lerp(
-                group.current.rotation.x,
-                -state.mouse.y * 0.4,
-                0.05
-            );
-
-
-        /* Nucleus Pulse */
-
+        // Nucleus Pulse
         const pulse = 1 + Math.sin(t * 2) * 0.05;
         nucleus.current.scale.set(pulse, pulse, pulse);
 
-
-        /* Electron Motion */
-
-        electron1.current.position.x = Math.sin(t) * 2.4;
-        electron1.current.position.z = Math.cos(t) * 2.4;
-
-        electron2.current.position.x = Math.sin(t + 2) * 2.4;
-        electron2.current.position.y = Math.cos(t + 2) * 2.4;
-
-        electron3.current.position.z = Math.sin(t + 4) * 2.4;
-        electron3.current.position.y = Math.cos(t + 4) * 2.4;
-
+        // Electron Motion (Local Space)
+        if (electron1.current) {
+            electron1.current.position.x = Math.sin(t) * 2.4;
+            electron1.current.position.y = Math.cos(t) * 2.4;
+        }
+        if (electron2.current) {
+            electron2.current.position.x = Math.sin(t + 2) * 2.4;
+            electron2.current.position.y = Math.cos(t + 2) * 2.4;
+        }
+        if (electron3.current) {
+            electron3.current.position.x = Math.sin(t + 4) * 2.4;
+            electron3.current.position.y = Math.cos(t + 4) * 2.4;
+        }
     });
 
-
     return (
-
         <group ref={group} scale={1.5}>
-
-
             {/* SHINY METALLIC NUCLEUS */}
-
             <mesh ref={nucleus}>
                 <sphereGeometry args={[0.9, 32, 32]} />
-
                 <meshStandardMaterial
                     color="#E5E4E2"
                     emissive="#C0C0C0"
@@ -81,89 +58,46 @@ function AtomStructure() {
                     metalness={1}
                     roughness={0.1}
                 />
-
             </mesh>
 
+            {/* ORBIT 1: HORIZONTAL (RELATIVE TO START) */}
+            <group rotation={[Math.PI / 2, 0, 0]}>
+                <mesh>
+                    <torusGeometry args={[2.4, 0.02, 16, 120]} />
+                    <meshStandardMaterial color="#E5E4E2" emissive="#FFFFFF" emissiveIntensity={0.3} metalness={1} />
+                </mesh>
+                <mesh ref={electron1}>
+                    <sphereGeometry args={[0.14, 32, 32]} />
+                    <meshStandardMaterial emissive="#E5E4E2" emissiveIntensity={2} color="#FFFFFF" />
+                </mesh>
+            </group>
 
+            {/* ORBIT 2: VERTICAL */}
+            <group rotation={[0, Math.PI / 2, 0]}>
+                <mesh>
+                    <torusGeometry args={[2.4, 0.02, 16, 120]} />
+                    <meshStandardMaterial color="#E5E4E2" emissive="#FFFFFF" emissiveIntensity={0.3} metalness={1} />
+                </mesh>
+                <mesh ref={electron2}>
+                    <sphereGeometry args={[0.14, 32, 32]} />
+                    <meshStandardMaterial emissive="#E5E4E2" emissiveIntensity={2} color="#FFFFFF" />
+                </mesh>
+            </group>
 
-            {/* SILVER ORBIT RINGS */}
-
-            <mesh rotation={[Math.PI / 2, 0, 0]}>
-                <torusGeometry args={[2.4, 0.02, 16, 120]} />
-                <meshStandardMaterial
-                    color="#E5E4E2"
-                    emissive="#FFFFFF"
-                    emissiveIntensity={0.3}
-                    metalness={1}
-                />
-            </mesh>
-
-
-            <mesh rotation={[0, Math.PI / 2, 0]}>
-                <torusGeometry args={[2.4, 0.02, 16, 120]} />
-                <meshStandardMaterial
-                    color="#E5E4E2"
-                    emissive="#FFFFFF"
-                    emissiveIntensity={0.3}
-                    metalness={1}
-                />
-            </mesh>
-
-
-            <mesh rotation={[Math.PI / 4, Math.PI / 4, 0]}>
-                <torusGeometry args={[2.4, 0.02, 32, 200]} />
-                <meshStandardMaterial
-                    color="#E5E4E2"
-                    emissive="#FFFFFF"
-                    emissiveIntensity={0.3}
-                    metalness={1}
-                />
-            </mesh>
-
-
-
-            {/* ELECTRONS */}
-
-            <mesh ref={electron1}>
-                <sphereGeometry args={[0.14, 32, 32]} />
-
-                <meshStandardMaterial
-                    emissive="#E5E4E2"
-                    emissiveIntensity={2}
-                    color="#FFFFFF"
-                />
-
-            </mesh>
-
-
-            <mesh ref={electron2}>
-                <sphereGeometry args={[0.14, 32, 32]} />
-
-                <meshStandardMaterial
-                    emissive="#E5E4E2"
-                    emissiveIntensity={2}
-                    color="#FFFFFF"
-                />
-
-            </mesh>
-
-
-            <mesh ref={electron3}>
-                <sphereGeometry args={[0.14, 32, 32]} />
-
-                <meshStandardMaterial
-                    emissive="#E5E4E2"
-                    emissiveIntensity={2}
-                    color="#FFFFFF"
-                />
-
-            </mesh>
-
+            {/* ORBIT 3: DIAGONAL */}
+            <group rotation={[Math.PI / 4, Math.PI / 4, 0]}>
+                <mesh>
+                    <torusGeometry args={[2.4, 0.02, 32, 200]} />
+                    <meshStandardMaterial color="#E5E4E2" emissive="#FFFFFF" emissiveIntensity={0.3} metalness={1} />
+                </mesh>
+                <mesh ref={electron3}>
+                    <sphereGeometry args={[0.14, 32, 32]} />
+                    <meshStandardMaterial emissive="#E5E4E2" emissiveIntensity={2} color="#FFFFFF" />
+                </mesh>
+            </group>
         </group>
-
     );
 }
-
 
 
 // ---------------- SCENE ----------------

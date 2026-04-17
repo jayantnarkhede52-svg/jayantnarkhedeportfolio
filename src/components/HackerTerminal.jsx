@@ -72,13 +72,13 @@ const HackerTerminal = () => {
                 break;
             case 'contact':
                 currentHistory.push({ type: 'system', content: 'EXTRACTING CONTACT DATA...' });
-                currentHistory.push({ type: 'info', content: 'PHONE: +91 88569 34651' });
-                currentHistory.push({ type: 'info', content: 'EMAIL: jayantsali@gmail.com' });
-                currentHistory.push({ type: 'info', content: 'WA: https://wa.me/918856934651' });
+                currentHistory.push({ type: 'info', content: 'PHONE: +91 88856 93465' });
+                currentHistory.push({ type: 'info', content: 'EMAIL: jayant.narkhede52@gmail.com' });
+                currentHistory.push({ type: 'info', content: 'WA: https://wa.me/918885693465' });
                 break;
             case 'socials':
                 currentHistory.push({ type: 'system', content: 'SCANNING EXTERNAL NETWORKS...' });
-                currentHistory.push({ type: 'info', content: 'LINKEDIN: https://linkedin.com/in/jayantsali' });
+                currentHistory.push({ type: 'info', content: 'LINKEDIN: https://www.linkedin.com/in/jayant-narkhede-6a56b21a1/' });
                 currentHistory.push({ type: 'info', content: 'INSTAGRAM: https://instagram.com/jayantsali_codes' });
                 break;
             case 'skills':

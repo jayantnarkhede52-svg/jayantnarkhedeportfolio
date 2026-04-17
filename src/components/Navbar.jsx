@@ -63,7 +63,7 @@ const Navbar = () => {
                 <div className="nav-actions">
                     {currentTheme === 'corporate' ? (
                         <a
-                            href={`https://wa.me/91885693465?text=${encodeURIComponent("Hi Jayant, I'd like to reach out for a corporate engagement.")}`}
+                            href={`https://wa.me/918885693465?text=${encodeURIComponent("Hi Jayant, I'd like to reach out for a corporate engagement.")}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-primary nav-cta-btn"
@@ -101,7 +101,7 @@ const Navbar = () => {
                     <div className="mobile-menu-cta">
                         {currentTheme === 'corporate' ? (
                             <a
-                                href={`https://wa.me/91885693465?text=${encodeURIComponent("Hi Jayant, I'd like to reach out for a corporate engagement.")}`}
+                                href={`https://wa.me/918885693465?text=${encodeURIComponent("Hi Jayant, I'd like to reach out for a corporate engagement.")}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-primary"

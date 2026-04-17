@@ -6,11 +6,12 @@ const Projects = () => {
     const { currentTheme } = useTheme();
     const [activeCase, setActiveCase] = useState(null);
 
-    const content = themeContent[currentTheme]?.projects;
-    const projectList = content?.items || themeContent.common.projects;
+    const isHacker = currentTheme === 'hacker';
+    const content = isHacker ? themeContent.hacker?.projects : themeContent.common.projects;
+    const projectList = isHacker ? content?.items : themeContent.common.projects;
 
-    const displayTitle = content?.title || "Proof Over Promises.";
-    const displaySubtitle = content?.subtitle || "Selected Work";
+    const displayTitle = isHacker ? content?.title : "Proof Over Promises.";
+    const displaySubtitle = isHacker ? content?.subtitle : "Selected Strategic Work";
 
     const isStartup = currentTheme === 'startup';
     const isCreative = currentTheme === 'creative';
@@ -108,49 +109,22 @@ const Projects = () => {
                         </div>
 
                         <div className="modal-body">
-                            {isStartup ? (
-                                <div className="pitch-deck-slides">
-                                    <div className="pitch-slide">
-                                        <h3><span className="slide-num">01</span> The Problem</h3>
-                                        <p>{activeCase.problem}</p>
-                                    </div>
-                                    <div className="pitch-slide">
-                                        <h3><span className="slide-num">02</span> Market Opportunity</h3>
-                                        <p>{activeCase.market}</p>
-                                    </div>
-                                    <div className="pitch-slide">
-                                        <h3><span className="slide-num">03</span> Strategy</h3>
-                                        <p>{activeCase.strategy}</p>
-                                    </div>
-                                    <div className="pitch-slide">
-                                        <h3><span className="slide-num">04</span> Execution</h3>
-                                        <p>{activeCase.execution}</p>
-                                    </div>
-                                    <div className="pitch-slide highlight">
-                                        <h3><span className="slide-num">05</span> The ROI / Results</h3>
-                                        <p>{activeCase.results}</p>
-                                    </div>
-                                </div>
-                            ) : (
-                                <>
-                                    <div className="case-section">
-                                        <h3>🎯 The Problem</h3>
-                                        <p>{activeCase.problem}</p>
-                                    </div>
-                                    <div className="case-section">
-                                        <h3>🧠 The Strategy</h3>
-                                        <p>{activeCase.strategy}</p>
-                                    </div>
-                                    <div className="case-section">
-                                        <h3>⚙ The Execution</h3>
-                                        <p>{activeCase.execution}</p>
-                                    </div>
-                                    <div className="case-section">
-                                        <h3>📈 The Outcome</h3>
-                                        <p>{activeCase.outcome}</p>
-                                    </div>
-                                </>
-                            )}
+                            <div className="case-section">
+                                <h3>🎯 The Problem</h3>
+                                <p>{activeCase.problem}</p>
+                            </div>
+                            <div className="case-section">
+                                <h3>🧠 The Strategy</h3>
+                                <p>{activeCase.strategy}</p>
+                            </div>
+                            <div className="case-section">
+                                <h3>⚙ The Execution</h3>
+                                <p>{activeCase.execution}</p>
+                            </div>
+                            <div className="case-section">
+                                <h3>📈 The Outcome</h3>
+                                <p>{activeCase.outcome}</p>
+                            </div>
                         </div>
 
                         <div className="modal-footer">

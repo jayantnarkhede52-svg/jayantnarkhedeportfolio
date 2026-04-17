@@ -1,84 +1,86 @@
 import React, { useState } from 'react';
 
-const GrowthCalculator = () => {
-    const [traffic, setTraffic] = useState(10000);
-    const [conversion, setConversion] = useState(2);
-    const [avgValue, setAvgValue] = useState(100);
 
-    const currentRevenue = traffic * (conversion / 100) * avgValue;
-    const optimizedRevenue = traffic * ((conversion * 1.5) / 100) * avgValue;
-    const potentialLifting = optimizedRevenue - currentRevenue;
+const GrowthCalculator = () => {
+    const [investment, setInvestment] = useState(50000);
+
+    const generatedRevenue = investment * 3;
+    const netProfit = generatedRevenue - investment;
+
+    const investmentPercent = ((investment - 10000) / (1000000 - 10000)) * 100;
 
     return (
-        <section className="growth-calculator-section container">
-            <div className="calculator-wrapper glass animate-fade-in">
-                <div className="calculator-header">
-                    <h2 className="section-title">ROI <span className="gradient-text">Simulator</span></h2>
-                    <p>Calculate the compounding impact of engineered optimization.</p>
+        <section className="growth-calculator-section container" id="roi-simulator">
+            <div className="calc-wrapper">
+                <div className="calc-header">
+                    <span className="calc-badge">💰 ROI Simulator</span>
+                    <h2 className="calc-title">Calculate Your <span className="calc-highlight">Growth Potential</span></h2>
+                    <p className="calc-subtitle">Input your project budget below to see the baseline revenue we aim to generate for your business.</p>
                 </div>
 
-                <div className="calculator-grid">
-                    <div className="calculator-inputs">
-                        <div className="simulator-input-card glass">
-                            <div className="input-group">
-                                <label>Monthly Traffic</label>
+                <div className="calc-body">
+                    <div className="calc-controls">
+                        <div className="calc-input-group">
+                            <div className="calc-input-header">
+                                <label>Your Investment (Project Budget)</label>
+                                <span className="calc-input-display">₹{investment.toLocaleString()}</span>
+                            </div>
+                            <div className="calc-slider-track">
+                                <div className="calc-slider-fill" style={{ width: `${investmentPercent}%` }}></div>
                                 <input
                                     type="range"
-                                    min="1000"
-                                    max="500000"
-                                    step="1000"
-                                    value={traffic}
-                                    onChange={(e) => setTraffic(Number(e.target.value))}
+                                    min="10000"
+                                    max="1000000"
+                                    step="10000"
+                                    value={investment}
+                                    onChange={(e) => setInvestment(Number(e.target.value))}
                                 />
-                                <div className="input-value">{traffic.toLocaleString()} Visits</div>
                             </div>
+                            <div className="calc-slider-labels">
+                                <span>₹10K</span>
+                                <span>₹10L+</span>
+                            </div>
+                        </div>
 
-                            <div className="input-group">
-                                <label>Current Conversion Rate (%)</label>
-                                <input
-                                    type="range"
-                                    min="0.1"
-                                    max="20"
-                                    step="0.1"
-                                    value={conversion}
-                                    onChange={(e) => setConversion(Number(e.target.value))}
-                                />
-                                <div className="input-value">{conversion}%</div>
-                            </div>
-
-                            <div className="input-group">
-                                <label>Avg. Customer Value (₹)</label>
-                                <input
-                                    className="dark-input"
-                                    type="number"
-                                    value={avgValue}
-                                    onChange={(e) => setAvgValue(Number(e.target.value))}
-                                />
-                            </div>
+                        <div className="calc-info-box">
+                            <p className="calc-info-text">
+                                <strong>The 3x Rule:</strong> My baseline objective for any project is to architect a digital system that generates at least 3x your initial investment in new pipeline revenue within the first year.
+                            </p>
                         </div>
                     </div>
 
-                    <div className="calculator-results">
-                        <div className="result-card current">
-                            <span className="result-label">Base Revenue</span>
-                            <span className="result-amount">₹{currentRevenue.toLocaleString()}</span>
+                    <div className="calc-results">
+                        <div className="calc-result-card">
+                            <div className="calc-result-icon">🎯</div>
+                            <div className="calc-result-info">
+                                <span className="calc-result-label">Initial Investment</span>
+                                <span className="calc-result-value">₹{investment.toLocaleString()}</span>
+                            </div>
                         </div>
-                        <div className="result-card optimized highlight-glow">
-                            <span className="result-label">Optimized Revenue (x1.5 Conversion)</span>
-                            <span className="result-amount highlight">₹{optimizedRevenue.toLocaleString()}</span>
+
+                        <div className="calc-result-card calc-result-optimized">
+                            <div className="calc-result-icon">🚀</div>
+                            <div className="calc-result-info">
+                                <span className="calc-result-label">Target Revenue Generated (3x)</span>
+                                <span className="calc-result-value calc-value-highlight">₹{generatedRevenue.toLocaleString()}</span>
+                            </div>
                         </div>
-                        <div className="result-card potential">
-                            <span className="result-label">Net Growth Opportunity</span>
-                            <span className="result-amount positive">+₹{potentialLifting.toLocaleString()}</span>
+
+                        <div className="calc-result-card calc-result-growth">
+                            <div className="calc-result-icon">✨</div>
+                            <div className="calc-result-info">
+                                <span className="calc-result-label">Net Profit</span>
+                                <span className="calc-result-value calc-value-positive">+₹{netProfit.toLocaleString()}</span>
+                            </div>
                         </div>
 
                         <a
-                            href="https://wa.me/91885693465"
+                            href="https://wa.me/918885693465"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-primary calc-cta"
+                            className="calc-cta-btn"
                         >
-                            Engineer This Growth
+                            Let's Build It →
                         </a>
                     </div>
                 </div>

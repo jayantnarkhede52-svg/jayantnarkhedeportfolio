@@ -4,8 +4,11 @@ import { themeContent } from '../data/themeContent';
 
 const About = () => {
     const { currentTheme } = useTheme();
-    const content = themeContent[currentTheme]?.about;
-    const skills = themeContent[currentTheme]?.skills;
+    
+    // Unify content for all modes except hacker
+    const isHacker = currentTheme === 'hacker';
+    const content = isHacker ? themeContent.hacker?.about : themeContent.common.about;
+    const skills = isHacker ? themeContent.hacker?.skills : themeContent.common.skills;
 
     if (!content && !skills) return null;
 
@@ -111,15 +114,15 @@ const About = () => {
                             <h2 className="about-title section-title">
                                 {skills.title.split(' ').slice(0, -1).join(' ')} <span className="gradient-text">{skills.title.split(' ').slice(-1)}</span>
                             </h2>
-                            <div className="skills-grid">
+                            <div className="skills-container">
                                 {skills.categories.map((cat, idx) => (
-                                    <div key={idx} className="skill-category glass">
-                                        <h3>{cat.name}</h3>
-                                        <ul>
+                                    <div key={idx} className="skill-category-card">
+                                        <h3 className="category-header">{cat.name}</h3>
+                                        <div className="skill-pill-container">
                                             {cat.items.map((skill, sIdx) => (
-                                                <li key={sIdx}>{skill}</li>
+                                                <span key={sIdx} className="skill-pill">{skill}</span>
                                             ))}
-                                        </ul>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

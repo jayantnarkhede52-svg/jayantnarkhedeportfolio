@@ -36,7 +36,7 @@ const Contact = () => {
                             </div>
                             <div className="contact-details">
                                 <span className="micro-label">Email : </span>
-                                <a href="mailto:narkhedejayant6@gmail.com" className="contact-link">narkhedejayant6@gmail.com</a>
+                                <a href="mailto:jayant.narkhede52@gmail.com" className="contact-link">jayant.narkhede52@gmail.com</a>
                             </div>
                         </div>
                     </div>
