@@ -5499,31 +5499,68 @@ body {
   }
 
   /* ===== LUXURY HERO FIX ===== */
+
+  /* Hide atom visual entirely on mobile — too heavy & breaks layout */
   [data-theme='luxury'] .hero-visual {
-    display: flex !important;
-    max-height: 250px !important;
-    order: -1;
-    margin-top: 2rem;
-    justify-content: center;
-    align-items: center;
+    display: none !important;
   }
 
-  [data-theme='luxury'] .hero-visual canvas {
-    display: block !important;
-    width: 220px !important;
-    height: 220px !important;
-    margin: 0 auto;
-    filter: drop-shadow(0 0 30px rgba(229, 228, 226, 0.2));
+  /* Collapse side-by-side layout to single column */
+  [data-theme='luxury'] .hero-layout-wrapper {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 6% !important;
+    min-height: unset !important;
+    padding-top: 5rem !important;
+    padding-bottom: 3rem !important;
   }
 
-  [data-theme='luxury'] .luxury-stats {
+  /* Center hero content */
+  [data-theme='luxury'] .hero-content {
+    text-align: center !important;
+    max-width: 100% !important;
+    flex: unset !important;
+    width: 100% !important;
+  }
+
+  /* Re-center subtitle */
+  [data-theme='luxury'] .hero-subtitle {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  /* Center the CTA buttons */
+  [data-theme='luxury'] .hero-actions {
+    justify-content: center !important;
     flex-wrap: wrap !important;
+  }
+
+  /* Scale title for mobile */
+  [data-theme='luxury'] .hero-title {
+    font-size: clamp(2rem, 8vw, 3.5rem) !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Luxury stats: 2-column grid on mobile */
+  [data-theme='luxury'] .luxury-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 0.8rem !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   [data-theme='luxury'] .stat-card {
-    min-width: 45% !important;
     padding: 1rem !important;
+  }
+
+  /* Luxury hero container - remove tall min-height on mobile */
+  [data-theme='luxury'] .hero-container {
+    padding-top: 100px !important;
+    padding-bottom: 3rem !important;
+    min-height: unset !important;
   }
 
   /* ===== CORPORATE HERO FIX ===== */
