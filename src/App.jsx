@@ -16,6 +16,7 @@ import AtmosphereControls from './components/AtmosphereControls';
 import { AICapabilities, NeuralNetwork, AIScanning, AITerminal, AICursor } from './components/AISystems';
 import HackerTerminal from './components/HackerTerminal';
 import SEOAnalytics from './components/SEOAnalytics';
+import Workspace3D from './components/Workspace3D';
 
 const PeacefulDivider = () => (
   <svg className="peaceful-divider" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -25,6 +26,22 @@ const PeacefulDivider = () => (
 
 function App() {
   const { currentTheme } = useTheme();
+  const [isMobile, setIsMobile] = React.useState(typeof window !== 'undefined' ? window.innerWidth < 768 : false);
+
+  React.useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  if (currentTheme === '3d-workspace' && !isMobile) {
+    return (
+      <div className="app-wrapper">
+        <Workspace3D />
+        <ThemeSwitcher />
+      </div>
+    );
+  }
 
   return (
     <div className="app-wrapper">

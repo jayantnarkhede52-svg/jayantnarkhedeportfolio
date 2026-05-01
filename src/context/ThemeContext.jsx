@@ -3,6 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export const themes = [
+    { id: '3d-workspace', name: '3D Workspace', icon: '🖥️' },
     { id: 'luxury', name: 'Dark Luxury', icon: '🌙' },
     { id: 'atmosphere', name: 'Atmosphere', icon: '☁️' },
     { id: 'peaceful', name: 'Peaceful Zen', icon: '🌿' },
@@ -16,7 +17,7 @@ export const themes = [
 ];
 
 export const ThemeProvider = ({ children }) => {
-    const [currentTheme, setCurrentTheme] = useState('luxury');
+    const [currentTheme, setCurrentTheme] = useState('3d-workspace');
 
     useEffect(() => {
         document.documentElement.setAttribute('data-theme', currentTheme);
