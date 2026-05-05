@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { themeContent } from '../data/themeContent';
+import logo from '../assets/logo.jpg';
 
 const CreativeSidebar = () => {
     const { currentTheme } = useTheme();
@@ -11,8 +12,11 @@ const CreativeSidebar = () => {
     return (
         <aside className="creative-sidebar">
             <div className="sidebar-top">
-                <div className="logo" style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-2px' }}>
-                    JAYANT<span className="accent-dot" style={{ color: 'var(--accent)' }}>.</span>
+                <div className="logo-container sidebar-logo-container" style={{ marginBottom: '2rem' }}>
+                    <img src={logo} alt="Jayant Lab Logo" className="sidebar-logo-img" style={{ height: '50px', width: 'auto', borderRadius: '8px' }} />
+                    <div className="logo" style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-2px' }}>
+                        JAYANT<span className="accent-dot" style={{ color: 'var(--accent)' }}>.</span>
+                    </div>
                 </div>
                 <p className="sidebar-intro" style={{ marginTop: '2rem', opacity: 0.8, lineHeight: 1.6 }}>
                     {content.intro}

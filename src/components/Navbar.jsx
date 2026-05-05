@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { themeContent } from '../data/themeContent';
+import logo from '../assets/logo.jpg';
 
 const Navbar = () => {
     const { currentTheme, themes } = useTheme();
@@ -48,8 +49,11 @@ const Navbar = () => {
     return (
         <nav className={`navbar-container ${isLightNav ? 'nav-light' : ''} ${scrolled ? 'nav-scrolled' : ''}`}>
             <div className="navbar-inner glass">
-                <div className="logo">
-                    JAYANT<span className="gradient-text">.LAB</span>
+                <div className="logo-container">
+                    <img src={logo} alt="Jayant Lab Logo" className="navbar-logo" />
+                    <div className="logo">
+                        JAYANT<span className="gradient-text">.LAB</span>
+                    </div>
                 </div>
 
                 {/* Desktop nav links */}

@@ -24,6 +24,8 @@ const CountUp = ({ end, duration = 2000, prefix = '', suffix = '' }) => {
         return Math.floor(num);
     };
 
+       
+
     return (
         <span className="count-up">
             {prefix}{formatNumber(count)}{suffix}

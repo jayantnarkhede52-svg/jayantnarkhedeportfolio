@@ -1051,6 +1051,24 @@ body {
   color: #000000 !important;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  height: 42px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.footer-logo-img {
+  height: 36px;
+  width: auto;
+  border-radius: 4px;
+}
+
 .logo {
   font-weight: 800;
   font-size: 1.4rem;

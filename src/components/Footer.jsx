@@ -1,11 +1,15 @@
 import React from 'react';
+import logo from '../assets/logo.jpg';
 
 const Footer = () => {
     return (
         <footer className="footer-container">
             <div className="container footer-content">
-                <div className="logo footer-logo">
-                    JAYANT<span className="gradient-text">.LAB</span>
+                <div className="logo-container footer-logo-container">
+                    <img src={logo} alt="Jayant Lab Logo" className="footer-logo-img" />
+                    <div className="logo footer-logo">
+                        JAYANT<span className="gradient-text">.LAB</span>
+                    </div>
                 </div>
                 <p className="footer-tagline">
                     Building the digital future with passion and precision. 2024 © KLR.WEB Studios.
