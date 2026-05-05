@@ -12,7 +12,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <p className="footer-tagline">
-                    Building the digital future with passion and precision. 2024 © KLR.WEB Studios.
+                    Building the digital future with passion and precision. 2026 © Jayant.Lab
                 </p>
                 <div className="footer-socials">
                     <a href="https://wa.me/918885693465" target="_blank" rel="noopener noreferrer">WhatsApp</a>
